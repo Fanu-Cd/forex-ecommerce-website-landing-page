@@ -1,29 +1,27 @@
-import './App.css';
+import {useState} from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/home';
+import Messages from './pages/messages';
+import Layout from './pages/layout';
+import Login from './pages/login';
+import Signup from './pages/signup';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
-  );
-}
+import ReactDOM from "react-dom/client";
+import TextField from '@mui/material/TextField';
+const App=()=>{
+  return(<BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index path='/' element={<Home />} />
+        <Route path="messages" element={<Messages />} />
+        <Route path='login' element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+  );}
+ 
 
+
+  
 export default App;
