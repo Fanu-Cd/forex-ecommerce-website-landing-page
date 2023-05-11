@@ -17,45 +17,38 @@ import {TbBrandApplePodcast} from 'react-icons/tb'
 import {TbBrandAsana} from 'react-icons/tb'
 import {TbBrandBackbone} from 'react-icons/tb'
 import {TbBrandBandcamp} from 'react-icons/tb'
-
+import p1 from './assets/pexels-aman-jakhar-1124468.jpg'
+import p2 from './assets/pexels-omar-lópez-1192601.jpg'
+import p3 from './assets/pexels-royal-anwar-983497.jpg'
+import p4 from './assets/pexels-chloe-1043474.jpg'
 const App=()=>{
   return(<>
        <Header />
-       {/* <section className="container front" style={{display:'flex',flexDirection:'column',borderRadius:'0.5rem',width:'100%',height:'30rem'}}>
-         <div style={{borderRadius:'0.5rem',marginTop:'1rem',marginLeft:'auto'}} className="btn-group btn-light" role="group" aria-label="Basic example">
-          <button type="button" disabled className="btn btn-light"><AiOutlineLeft /></button>
-          <button type="button" className="btn btn-light"><AiOutlineRight /></button>
-        </div>
-        <div className="text-center d-flex flex-column justify-content-center align-items-center mt-1 mx-auto" style={{width:'80%',minHeight:'10rem',height:'auto'}}>
-          <h1 className="display1" style={{fontWeight:'bold',color:'white'}}>
-            Level up your styles with our summer collections
-          </h1>
-          <Button className="mt-5" size="medium" variant="contained" style={{color:'black',backgroundColor:'white'}} endIcon={<AiOutlineRight />}>Shop Now</Button>
-        </div>
-       </section> */}
-       <div id="carouselExample" className="container front carousel slide">
-       <div className="btn-group rounded z-index-2 d-block position-absolute" style={{top:'1rem',left:'3rem',zIndex:'2',backgroundColor:'white'}}>
+       <div id="carouselExample" className="rounded container front carousel slide" data-bs-ride="carousel">
+         <div className="btn-group rounded z-index-2 d-block position-absolute" style={{top:'1rem',left:'3rem',zIndex:'2',backgroundColor:'white'}}>
   <button className="btn" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <AiOutlineLeft />
   </button>
   <button className="btn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <AiOutlineRight/>
   </button>
-  </div>
-  <div className="carousel-inner">
+         </div>
+         <div className="carousel-inner rounded">
     <div className="carousel-item active">
-      <img src={pic} className="d-block w-100 object-fit-cover " alt="..." style={{height:'20rem',zIndex:'1'}} />
+      <img src={p1} className="d-block w-100 " alt="..." style={{objectFit:'cover',height:'25rem'}} />
     </div>
     <div className="carousel-item">
-      <img src={pic} className="d-block w-100 object-fit-cover" alt="..." style={{height:'25rem'}}  />
+      <img src={p2} className="d-block w-100" alt="..." style={{objectFit:'cover',height:'25rem'}}  />
     </div>
     <div className="carousel-item">
-      <img src={pic} className="d-block w-100 object-fit-cover" alt="..." style={{height:'25rem'}}  />
+      <img src={p3} className="d-block w-100" alt="..." style={{objectFit:'cover',height:'25rem'}}  />
     </div>
-  </div>
-  
-</div>
-       <div className="container mt-3 px-2 d-flex flex-column" style={{minHeight:"5rem",height:'auto'}}>
+         </div>
+        </div>
+        <div className='d-flex justify-content-center'>
+          <Button variant='contained' className='btn text-body position-relative bg-white' style={{bottom:'6rem'}} endIcon={<AiOutlineRight />}>Shop Now</Button>
+        </div>
+       <div className="container mt-3 px-2 d-flex flex-column" style={{height:"5rem",height:'auto'}}>
           <h3 className="text-center text-lg-left" style={{fontWeight:'bold'}}>Brands</h3>
           <div className="container-fluid row  justify-content-center" style={{gridGap:'3rem',minHeight:'3rem',height:'auto'}}>
             <TbBrandAdobe className='col-4 col-md-1' style={{minHeight:'2rem'}}/>
@@ -108,6 +101,20 @@ const App=()=>{
             </div>
             </div>
           </div>
+        </div>
+        <div className="container row mx-auto">
+            <div style={{height:'15rem'}} className="rounded col-sm-6 col-12">
+              <img src={p1} className='rounded' style={{width:'100%',objectFit:'cover',height:'100%'}} alt='Best Seller' />
+            </div>
+            <div style={{height:'15rem'}} className="rounded col-sm-6 col-12">
+              <img src={p2} className='rounded' style={{width:'100%',objectFit:'cover',height:'100%'}} alt='Best Seller' />
+            </div>
+            <div style={{height:'15rem'}} className=" rounded col-sm-6 col-12">
+              <img src={p3} className='rounded' style={{width:'100%',objectFit:'cover',height:'100%'}} alt='Best Seller' />
+            </div>
+            <div style={{height:'15rem'}} className=" rounded col-sm-6 col-12">
+              <img src={p4} className='rounded' style={{width:'100%',objectFit:'cover',height:'100%'}} alt='Best Seller' />
+            </div>
         </div>
        </>
   );
