@@ -1,1 +1,1 @@
-Ecommerce website landing page built using React and Boostrap
+Ecommerce website(Fedex) landing page built using React and Boostrap
