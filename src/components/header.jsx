@@ -10,7 +10,7 @@ return(
   <nav className="navbar navbar-expand-md">
   <div className="container-fluid d-flex justify-content-space-around">
     <a className="navbar-brand" href="#">
-      <img src={logo} style={{width:'100%',height:'3rem'}} />
+      <img src={logo} alt="fedex logo" style={{width:'100%',height:'3rem'}} />
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <AiOutlineMenu />
