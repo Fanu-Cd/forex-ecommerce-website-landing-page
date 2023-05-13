@@ -9,7 +9,7 @@ const Header=()=>{
 return(
   <nav className="navbar navbar-expand-md">
   <div className="container-fluid d-flex justify-content-space-around">
-    <a className="navbar-brand" href="javascript:void(0);">
+    <a className="navbar-brand" href="/#">
       <img src={logo} alt="fedex" style={{width:'100%',height:'3rem'}} />
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,20 +22,20 @@ return(
              Shop
            </button>
            <ul className="dropdown-menu">
-             <li><a className="dropdown-item" href="javascript:void(0);">Action</a></li>
-             <li><a className="dropdown-item" href="javascript:void(0);">Another action</a></li>
+             <li><a className="dropdown-item" href="/#">Action</a></li>
+             <li><a className="dropdown-item" href="/#">Another action</a></li>
              <li><hr className="dropdown-divider"/></li>
-             <li><a className="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+             <li><a className="dropdown-item" href="/#">Something else here</a></li>
            </ul>
          </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="javascript:void(0);">Most Wanted</a>
+          <a className="nav-link active" aria-current="page" href="/#">Most Wanted</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="javascript:void(0);">New Arrival</a>
+          <a className="nav-link" href="/#">New Arrival</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="javascript:void(0);">Brands</a>
+          <a className="nav-link" href="/#">Brands</a>
         </li>
       </ul>
         <TextField
