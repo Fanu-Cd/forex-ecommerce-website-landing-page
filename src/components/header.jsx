@@ -1,8 +1,8 @@
 import logo from '../assets/fedex.svg'
-import {CiSearch} from 'react-icons/ci'
 import {BsFillCartFill} from 'react-icons/bs'
 import {AiOutlineUser} from 'react-icons/ai'
 import {AiOutlineMenu} from 'react-icons/ai'
+import {CiSearch} from 'react-icons/ci'
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 const Header=()=>{
@@ -15,7 +15,7 @@ return(
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <AiOutlineMenu />
     </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
+    <div className="collapse d-md-flex justify-content-between navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
       <li className="nav-item dropdown">
            <button className="btn dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,10 +38,23 @@ return(
           <a className="nav-link" href="#">Brands</a>
         </li>
       </ul>
-      <input style={{maxWidth:'15rem',height:'100%'}} className="form-control" placeholder="Search" type="text" />
-      <div className="hstack gap-3">
-        <button className="btn">
-            <BsFillCartFill />
+        <TextField
+        id="input-with-icon-textfield"
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              <CiSearch />
+            </InputAdornment>
+          ),
+        }}
+        variant="outlined"
+        size='small'
+        placeholder='Search'
+        style={{maxWidth:'25rem'}}
+      />
+      <div className="d-flex">
+        <button className="btn" >
+            <BsFillCartFill/>
           </button>
         <button className="btn">
             <AiOutlineUser />
